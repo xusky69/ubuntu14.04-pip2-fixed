@@ -19,6 +19,6 @@ RUN mkdir ~/wheels_dir && cd ~/wheels_dir && \
 RUN pip install --no-index ~/wheels_dir/pip-20.0.2-py2.py3-none-any.whl
 RUN pip install --no-index ~/wheels_dir/*
 
-### this is an attempt to update six and urllib3, comment if issues found.
+### this is an attempt to update requests and urllib3, comment if issues found.
 RUN pip install urllib3[secure]==1.26.6 --ignore-installed
 RUN pip install requests==2.26.0 --ignore-installed
